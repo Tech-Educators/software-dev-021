@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: green;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+.content1 {
+    /* Margin is reserved space OUTSIDE of the border. */
+    margin: 50px;
+    /* Padding is reserved space BETWEEN the border and the content of the element. */
+    padding: 50px;
+    /* The border property can take 3 values. First is the width of the border. Second is the style of the border. The third is the colour of the border. */
+    border: 10px solid black;
+    background-color: blue;
+}
+
+.content2 {
+    padding: 30px;
+    background-color: orangered;
+}

@@ -1,0 +1,59 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+body {
+    /* In this case the peru colour is applied because it comes later in the CSS rule that styles the body element. */
+    background-color: peru;
+    font-family: monospace;
+    background-color: cornflowerblue;
+}
+
+header {
+    background-color: indianred 
+    
+}
+
+/* For the same reason as above, the background colour we see is chartreuse */
+h1 {
+    background-color: hotpink;
+    background-color: chartreuse;
+
+}
+section {
+    background-color: darkgoldenrod;
+}
+main {
+    background-color: slateblue;
+}
+
+/* All of the above selectors are called element selectors. An element selector targets EVERY element of that type in our HTML file! */
+
+.header-button {
+    background-color: bisque;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.main-button {
+    background-color: forestgreen;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.main-button:hover {
+background-color: darkmagenta;
+font-size: 5rem;
+cursor: pointer;
+}
+/* The selector above are CLASS slectors. We show this by using a full stop in the selector, followed by the class name we gave our HTML element. Classes are REUSEABLE! Multiple elements can have the same class attribute. */
+
+#navlink1 {
+color: whitesmoke;
+
+}
+/* The above selector is the ID selector. We use the # character to denote that we are selecting an element by it's ID attribute. ID's must be UNIQUE, two elements must not have the same ID! */
+
+.footerlinks {
+    font-size: 5rem;
+}
+
