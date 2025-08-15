@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: peru;
+}
+
+.image-container {
+    position: fixed;
+    margin-top: 300px;
+    background-color: brown;
+}
+
+img {
+    left: 100px;
+
+}
+

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: salmon;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    /* The default flex dirtection for flex items is already ROW */
+    justify-content: space-between;
+    /* Space between is the max. space possible between flex items */
+    /* Space around is an equal amount of space around each flex item. Items that are next to each other will have their spaces next to each other also. */
+    flex-wrap: wrap;
+    /* Flex wrap will mean that on smaller screens or situations where you flex items dont have enough space to display properly, they will wrap down to the next line instead of being resized. */
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: white
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
