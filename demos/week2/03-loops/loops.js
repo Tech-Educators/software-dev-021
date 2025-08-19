@@ -36,6 +36,56 @@ for (let i = 0; i < subjects.length; i++) {
   console.log(subjects[i]); // the initial value (i) is also representing the index number
 }
 
+// simplified for loops
+//these for loops work in the same way, but the syntax is simpler
+
+// for ... of
+// let subject --> this represents each item in the array
+// of subjects --> this is the condition (length is included)
+// the afterthought is implied
+
+for (let subject of subjects) {
+  console.log(subject);
+}
+
+//forEach()
+// a method --> a JS default function
+//structure
+
+subjects.forEach(function (subject) {
+  console.log(subject);
+});
+
+//TODO: I want to render (display, show) 3 images in my page
+// - I need a container for the images ✅
+// - I need a loop to perform a repetitive task (for loop)
+// - I need the image source and alt text ✅
+// - I need to store the images data ✅
+// - I need create and add the images to the DOM
+
+let imgURLs = [
+  "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1505820013142-f86a3439c5b2?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+];
+
+let altText = [
+  "poppies in a field",
+  "fir tree",
+  "mushroom in the forest",
+  "template",
+  "Joe",
+];
+
+//select the container
+const imageContainer = document.querySelector(".image-container");
+for (let i = 0; i < altText.length; i++) {
+  const pTag = document.createElement("p"); // <p></p>
+  pTag.textContent = altText[i];
+  pTag.className = "alt-text";
+  imageContainer.appendChild(pTag);
+}
+
 //=======================================
 //&& AND --> both conditions need to be truthy for the action to happen
 // if (movieRating === "PG" && age === 7) {
