@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  /* fr means fraction */
+  grid-template-columns: 200px 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 10%;
+  /* grid-template */
+  height: 100vh;
+}
+
+header,
+footer {
+  /* grid-column: ;
+    grid-row: ; */
+  grid-column-start: 1;
+  /* -1 represents the last column/row in our grid */
+  grid-column-end: -1;
+  display: flex;
+  justify-content: center;
+}
+
+/* .hf {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: center;
+} */
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
