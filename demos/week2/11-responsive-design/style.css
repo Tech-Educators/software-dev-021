@@ -1,0 +1,58 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.categories-list {
+  border-top: 2px solid goldenrod;
+  border-bottom: 2px solid goldenrod;
+  margin-block: 5rem;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: larger;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.author img {
+  width: 100px;
+}
+
+.books-grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  /* 1em is 16px */
+  gap: 1rem;
+  border: 10px solid peru;
+  background-color: rgb(0, 0, 255);
+}
+
+.individual-book img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* media queries */
+/* a specific set of rules that will only apply when the screen is a specific size */
+/* you can have as many media queries as you want */
+/* media queries are your last resort when it comes to responsivess. Make sure your default styles are dynamic and then use media queries for very specific purposes */
+
+@media (min-width: 600px) {
+  .author {
+    display: flex;
+    gap: 1rem;
+  }
+}
