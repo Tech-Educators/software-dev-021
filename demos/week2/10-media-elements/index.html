@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Elements</title>
+  </head>
+  <body>
+    <h1>Media Elements</h1>
+    <!-- image -->
+    <!-- alt text: accessibility, SEO, as a back-up for network or src issues -->
+    <!-- we do not always need alt text! Decorative images -->
+    <img
+      src="https://images.unsplash.com/photo-1520496938502-73e942d08cc3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="joe in the shape of a guitar in the middle of a room full of mist"
+      width="300"
+      height="200"
+    />
+    <!-- audio -->
+    <!-- if you want media to autoplay, use muted -->
+    <audio src="./assets/audio/birds.mp3" controls loop autoplay muted></audio>
+
+    <!-- video -->
+    <video
+      src="./assets/video/birds-small.mp4"
+      controls
+      loop
+      muted
+      poster="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      width="1920"
+      height="1080"
+    ></video>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/bptXEszZMuk?si=3fkGh9MK_DIhnU74&amp;start=300"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
