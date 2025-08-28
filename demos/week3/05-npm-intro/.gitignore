@@ -1,0 +1,2 @@
+# Add the name of the folders and files to ignore when we push to GitHub
+node_modules

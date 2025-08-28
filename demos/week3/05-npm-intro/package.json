@@ -1,0 +1,17 @@
+{
+  "name": "05-npm-intro",
+  "version": "1.0.0",
+  "description": "Intro to NPM using cowsay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app"
+  },
+  "keywords": [],
+  "author": "Manny",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  },
+  "type": "module"
+}
