@@ -4,6 +4,9 @@ import express from "express";
 // instantiate our express (create an instance of)
 const app = express();
 
+// make sure our POST endpoint can recieve data in the body
+app.use(express.json());
+
 // our root endpoint
 app.get("/", function (request, response) {
   response.send("You are looking at my root route. How roude!");
