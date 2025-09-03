@@ -37,7 +37,7 @@ app.get("/staff-manny", async (_, res) => {
 //TODO: CREATE (POST) new data in the database
 app.post("/add-staff", (req, res) => {
   //an element to store the data coming from the client
-  const newStaff = req.body;
+  const newStaff = req.body.formValues;
   //database query
   //in our SQL queries, we can have a placeholder (parameter) that we will replace with the actual values when the client sends them
   const query = db.query(

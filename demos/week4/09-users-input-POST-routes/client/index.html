@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/app.js" defer></script>
+    <title>Staff App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h1>Staff App</h1>
+    <!-- in here, we need to add some inputs that resemble the table columns -->
+    <!-- be consistent between the data you collect in the client, the data you process in the server, and the data you sotre in the database -->
+    <form id="staff-form">
+      <!-- validate the data type of your inputs to match the columns in the database -->
+      <!-- name your inputs with the same value as the name of your columns in the database table -->
+      <label for="name">Staff name: </label>
+      <input type="text" name="name" required />
+      <label for="location">Location: </label>
+      <input type="text" name="location" required />
+      <label for="age">Staff age: </label>
+      <input type="number" name="age" required min="16" max="75" />
+      <label for="role">Staff role: </label>
+      <input type="text" name="role" required />
+      <button type="submit">Submit new data</button>
+    </form>
   </body>
 </html>
