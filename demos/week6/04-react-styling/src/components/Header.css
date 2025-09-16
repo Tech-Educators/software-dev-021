@@ -1,0 +1,11 @@
+/* I am going to use this file to style my Header component */
+
+/* When our app gets more complex, we need to style our elements in a more targeted way --> pure selectors (className, id) */
+
+.main-header {
+  background-color: goldenrod;
+}
+
+.title {
+  font-size: var(--font-header);
+}

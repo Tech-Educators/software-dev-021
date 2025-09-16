@@ -1,0 +1,21 @@
+/* tell CSS to activate Tailwind */
+@import "tailwindcss";
+/* the :root pseudo-class targets the root of your project --> <html> */
+/* CSS variables: variables to store style values that we can reuse */
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* declare a variable in the root --> this is not styling anything yet */
+  --bg-colour: rgb(77, 77, 192);
+  --main-font: monospace;
+  --font-header: 2rem;
+  --font-paragraph: 1rem;
+}
+
+body {
+  /* use the var() to use a CSS variable */
+  background-color: var(--bg-colour);
+  font-family: var(--main-font);
+}
