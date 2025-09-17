@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --main-font: monospace;
+  --heading-size: 1.5rem;
+  --text-size: 0.5rem;
+  --bg-colour: #cd853f;
+}
+
+body {
+  background-color: var(--bg-colour);
+  font-family: var(--main-font);
+}
+
+.heading {
+  font-size: var(--heading-size);
+  font-weight: bold;
+  padding: 20px;
+}
