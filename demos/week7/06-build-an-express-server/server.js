@@ -21,5 +21,5 @@ app.listen(PORT, () => {
 //GET --> READ
 app.get("/", (_, res) => {
   //   res.json({ message: "Welcome to the server. GET comfy" });
-  res.send("Welcome!");
+  res.send("<ul><li>Welcome</li></ul>");
 });
