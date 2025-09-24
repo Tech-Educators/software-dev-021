@@ -78,3 +78,49 @@ app.post("/add-biscuit", (req, res) => {
     res.status(500).json({ success: false });
   }
 });
+
+//TODO: delete an entry from the biscuits table
+app.delete("/delete-biscuit/:id", (req, res) => {
+  try {
+    //the request has an object called params
+    const paramsId = req.params.id;
+
+    //destructure the params object
+    // const { id } = req.params;
+
+    //query the database to delete one entry
+    const query = db.query(`DELETE FROM biscuits WHERE id = $1 RETURNING *;`, [
+      paramsId,
+    ]);
+  } catch (error) {
+    console.error("Error in the delete-biscuit route", error);
+    res.status(500).json({ success: false });
+  }
+});
+
+//TODO: update an entry in the biscuits table
+app.put("/update-biscuit/:id", (req, res) => {
+  try {
+    //you could destructure params and body
+    const paramsId = req.params.id;
+    const newData = req.body;
+    // query my database to update ONE entry
+    //what specific entry? --> dynamic parameter
+    //what data do you want to add in place for the current data? --> body
+
+    const query = db.query(
+      `UPDATE biscuits SET biscuit_name = $1, src= $2, description= $3, crunchiness= $4, customer_id = $5 WHERE id = $6 RETURNING *;`,
+      [
+        newData.biscuitName,
+        newData.src,
+        newData.description,
+        newData.crunchiness,
+        newData.customerId,
+        paramsId,
+      ]
+    );
+  } catch (error) {
+    console.error("Error in update-biscuit route", error);
+    res.status(500).json({ success: false });
+  }
+});
