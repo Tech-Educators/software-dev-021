@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --background-colour: #ef476f;
+  --accent-colour: #ffd166;
+  --link-colour: #097458;
+}
+
+body {
+  background-color: var(--background-colour);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  /* back-up font */
+  font-family: monospace;
+}

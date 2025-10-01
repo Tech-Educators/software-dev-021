@@ -1,0 +1,16 @@
+/* This is a CSS module */
+/* We can add styles here as usual with CSS */
+/* We can only use pure selectors --> className or ids */
+
+.listContainer {
+  padding: 20px;
+}
+
+.link {
+  font-weight: 700;
+  color: var(--link-colour);
+  /* nested selectors */
+  &:hover {
+    background-color: var(--accent-colour);
+  }
+}
