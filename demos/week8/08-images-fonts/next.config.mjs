@@ -31,10 +31,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.**",
-        port: "",
-        pathname: "/**",
-        search: "",
+        hostname: "**",
       },
     ],
   },
