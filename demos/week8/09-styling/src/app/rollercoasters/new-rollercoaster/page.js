@@ -35,7 +35,7 @@ export default function NewRollercoasterPage() {
     revalidatePath("/rollercoasters");
 
     //redirect the user to the rollercoasters page
-    redirect("rollercoasters");
+    redirect("/rollercoasters");
   }
 
   return (
