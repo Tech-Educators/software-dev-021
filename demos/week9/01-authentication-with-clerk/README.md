@@ -20,7 +20,7 @@ npm install @clerk/nextjs
 
 ## Step 4: Set up the clerk provider
 
-- In the root layout.js, import and nest your root elements within the <ClerkProvider>
+- In the root layout.js, import and nest your root elements within the ClerkProvider
 
 ## Step 5: Configure public and protected routes in the middleware.js
 
