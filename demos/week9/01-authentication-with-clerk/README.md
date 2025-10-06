@@ -33,7 +33,7 @@ npm install @clerk/nextjs
 - Create two routes: sign-in and sign-up
 - Add an optional [catch-all segment](https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes#catch-all-segments)
 - Add a page in the catch-all segment folder
-- Import the <SignUp> and <SignIn> components from clerk in their own respective pages
+- Import the SignUp and SignIn components from clerk in their own respective pages
 - Configure clerk to use our custom sign-in and sign-up routes instead of the default app ones --> environment variables
 
 ## Step 7: Improve UI with more user-friendly clerk components
